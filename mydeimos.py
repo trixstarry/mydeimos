@@ -11,7 +11,7 @@ openai_api_key = st.sidebar.text_input('OpenAI API Key', type='password')
 # Defining a function to generate a response using the OpenAI language model
 def generate_response(input_text):
 	# Initializing the OpenAI language model with a specified temperature and API key
-	llm = OpenAI(temperature=0.0, openai_api_key=openai_api_key)
+	llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
 	# Displaying the generated response as an informational message in the Streamlit app
 	st.info(llm(input_text))
 
